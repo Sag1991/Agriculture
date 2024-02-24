@@ -1,0 +1,15 @@
+<section class="section smoothie-slider">
+    <div *ngFor="let slide of slides, let index = index" class="smoothie-slide">
+        <img [src]="slide.image">
+        <div class="slide-caption section-md" [ngClass]="{'text-sm-start': index === 0, 'text-center': index === 1}">
+            <div class="container">
+                <h2 class="title-1">{{ slide.title1 }}</h2>
+                <h5 class="title-2">{{ slide.title2 }}</h5>
+                <div class="button-wrap">
+                    <a class="button button-lg button-shadow-4 button-secondary-2 button-zakaria"
+                        [href]="slide.buttonLink">Shop now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

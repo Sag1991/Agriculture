@@ -1,0 +1,38 @@
+.smoothie-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.smoothie-slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.smoothie-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+.title-1, .title-2 {
+    color: #fff;
+}
+
+.button-wrap {
+    margin-top: 20px;
+}
+
+/* Add media queries and additional styling as needed */
