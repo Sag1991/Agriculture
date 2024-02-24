@@ -1,0 +1,39 @@
+<header class="section page-header header-creative-wrap context-dark">
+    <!-- RD Navbar-->
+    <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-creative rd-navbar-creative-2">
+            <div class="rd-navbar-main-outer">
+                <div class="rd-navbar-main">
+                    <div class="rd-navbar-nav-wrap">
+                        <ul class="rd-navbar-nav">
+                            <li *ngFor="let item of navItems" class="rd-nav-item" [class.active]="item.isActive">
+                                <a class="rd-nav-link" [href]="item.href">{{ item.label }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- <ul class="rd-menu rd-navbar-dropdown">
+                                    <li class="rd-dropdown-item active">
+                                        <a class="rd-dropdown-link" href="smoothie-shop.html">Smoothie Shop</a>
+                                    </li>
+                                    <li class="rd-dropdown-item">
+                                        <a class="rd-dropdown-link" href="index.html">Farm</a>
+                                    </li>
+                                    <li class="rd-dropdown-item">
+                                        <a class="rd-dropdown-link" href="fruit-farm.html">Fruit Farm</a>
+                                    </li>
+                                    <li class="rd-dropdown-item">
+                                        <a class="rd-dropdown-link" href="poultry-farm.html">Poultry Farm</a>
+                                    </li>
+                                    <li class="rd-dropdown-item">
+                                        <a class="rd-dropdown-link" href="winery.html">Winery</a>
+                                    </li>
+                                    <li class="rd-dropdown-item">
+                                        <a class="rd-dropdown-link" href="dairy-farm.html">Dairy Farm</a>
+                                    </li>
+                                </ul> -->
