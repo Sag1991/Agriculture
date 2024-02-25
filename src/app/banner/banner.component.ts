@@ -24,13 +24,13 @@ export class BannerComponent {
     }
     // Add more slide data as needed
   ];
-  
-  currentSlideIndex = 0; // Initial slide index
+  currentIndex = 0;
 
+  nextSlide() {
+    this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+  }
 
-  // ngOnInit() {
-  //   setInterval(() => {
-  //     this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-  //   }, 5000); // Change slide every 5 seconds (adjust as needed)
-  // }
+  prevSlide() {
+    this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+  }
 }

@@ -1,5 +1,5 @@
-<section class="section smoothie-slider">
-    <div *ngFor="let slide of slides, let index = index" class="smoothie-slide">
+<section class="section smoothie-slider" style="min-height: 44.0625vw;">
+    <div *ngFor="let slide of slides, let index = index" class="smoothie-slide" [hidden]="index !== currentIndex">
         <img [src]="slide.image">
         <div class="slide-caption section-md" [ngClass]="{'text-sm-start': index === 0, 'text-center': index === 1}">
             <div class="container">
@@ -11,5 +11,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="navigation-buttons">
+        <button class="swiper-button-prev" (click)="prevSlide()"></button>
+        <button class="swiper-button-next" (click)="nextSlide()"></button>
     </div>
 </section>
