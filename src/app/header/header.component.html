@@ -1,39 +1,53 @@
 <header class="section page-header header-creative-wrap context-dark">
-    <!-- RD Navbar-->
-    <div class="rd-navbar-wrap">
-        <nav class="rd-navbar rd-navbar-creative rd-navbar-creative-2">
-            <div class="rd-navbar-main-outer">
-                <div class="rd-navbar-main">
-                    <div class="rd-navbar-nav-wrap">
-                        <ul class="rd-navbar-nav">
-                            <li *ngFor="let item of navItems" class="rd-nav-item" [class.active]="item.isActive">
-                                <a class="rd-nav-link" [href]="item.href">{{ item.label }}</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+        <div class="rd-navbar-wrap" style="height: 183.6px;">
+                <nav class="rd-navbar rd-navbar-creative rd-navbar-creative-2 rd-navbar-original rd-navbar-static"
+                        data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
+                        data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+                        data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+                        data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
+                        data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px"
+                        data-xl-stick-up-offset="112px" data-xxl-stick-up-offset="132px" data-lg-stick-up="true"
+                        data-xl-stick-up="true" data-xxl-stick-up="true">
+                        <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1 toggle-original"
+                                data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                        <app-top-header></app-top-header>
+                        <div class="rd-navbar-main-outer">
+                                <div class="rd-navbar-main">
+                                        <div class="rd-navbar-nav-wrap toggle-original-elements">
+                                                <ul class="rd-navbar-nav">
+                                                        <li *ngFor="let menuItem of menuItems"
+                                                                class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu">
+                                                                <a class="rd-nav-link" [href]="menuItem.link">{{
+                                                                        menuItem.label }}</a>
+                                                                <span class="rd-navbar-submenu-toggle"></span>
+                                                        </li>
+                                                </ul>
+
+                                        </div>
+                                </div>
+                        </div>
+                </nav>
+        </div>
 </header>
 
+
+
 <!-- <ul class="rd-menu rd-navbar-dropdown">
-                                    <li class="rd-dropdown-item active">
-                                        <a class="rd-dropdown-link" href="smoothie-shop.html">Smoothie Shop</a>
-                                    </li>
-                                    <li class="rd-dropdown-item">
-                                        <a class="rd-dropdown-link" href="index.html">Farm</a>
-                                    </li>
-                                    <li class="rd-dropdown-item">
-                                        <a class="rd-dropdown-link" href="fruit-farm.html">Fruit Farm</a>
-                                    </li>
-                                    <li class="rd-dropdown-item">
-                                        <a class="rd-dropdown-link" href="poultry-farm.html">Poultry Farm</a>
-                                    </li>
-                                    <li class="rd-dropdown-item">
-                                        <a class="rd-dropdown-link" href="winery.html">Winery</a>
-                                    </li>
-                                    <li class="rd-dropdown-item">
-                                        <a class="rd-dropdown-link" href="dairy-farm.html">Dairy Farm</a>
-                                    </li>
-                                </ul> -->
+        <li class="rd-dropdown-item active"><a class="rd-dropdown-link"
+                href="smoothie-shop.html">Smoothie Shop</a>
+        </li>
+        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="index.html">Farm</a>
+        </li>
+        <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                href="fruit-farm.html">Fruit Farm</a>
+        </li>
+        <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                href="poultry-farm.html">Poultry Farm</a>
+        </li>
+        <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                href="winery.html">Winery</a>
+        </li>
+        <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                href="dairy-farm.html">Dairy Farm</a>
+        </li>
+    </ul> -->
