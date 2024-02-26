@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class BannerComponent {
   slides = [
     {
-      image: '../../assets/images/farming.jpg',
+      image: '../../assets/images/farm2.jpg',
       title1: 'Tasty Way to Healthier Life',
       title2: 'Our organic drinks contain all necessary elements and vitamins for your health.',
       buttonLink: 'grid-shop.html'
