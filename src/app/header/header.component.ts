@@ -5,11 +5,7 @@ import { TopHeaderComponent } from './top-header/top-header.component';
 @Component({
   selector: 'app-header',
   standalone: true,
-<<<<<<< Updated upstream
-  imports: [CommonModule],
-=======
   imports: [CommonModule, TopHeaderComponent],
->>>>>>> Stashed changes
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
