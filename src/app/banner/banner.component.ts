@@ -11,16 +11,16 @@ import { Component } from '@angular/core';
 export class BannerComponent {
   slides = [
     {
-      image: '../../assets/images/farm2.jpg',
+      image: '../../assets/images/farm1.jpg',
       title1: 'Tasty Way to Healthier Life',
       title2: 'Our organic drinks contain all necessary elements and vitamins for your health.',
-      buttonLink: 'grid-shop.html'
+      buttonLink: '#'
     },
     {
-      image: '../../assets/images/farming-2.jpeg',
+      image: '../../assets/images/farm2.jpg',
       title1: 'New Drink, New Day',
       title2: 'With our wide variety of smoothies and healthy drinks, we are sure to help you make the right choice to start your day.',
-      buttonLink: 'grid-shop.html'
+      buttonLink: '#'
     }
     // Add more slide data as needed
   ];
