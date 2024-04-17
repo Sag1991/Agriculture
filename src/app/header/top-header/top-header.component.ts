@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './top-header.component.html',
-  styleUrl: './top-header.component.scss'
+  styleUrl: './top-header.component.scss',
 })
-export class TopHeaderComponent {
-
-}
+export class TopHeaderComponent {}

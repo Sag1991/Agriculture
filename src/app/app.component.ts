@@ -12,11 +12,27 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { TeamComponent } from './team/team.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, BannerComponent, ServicesComponent, FlavoursComponent, CounterComponent, ProductsComponent, PeopleComponent, GalleryComponent, TeamComponent, NewsletterComponent, FooterComponent],
+  imports: [
+    CommonModule, 
+    RouterOutlet, 
+    HeaderComponent, 
+    BannerComponent, 
+    ServicesComponent, 
+    FlavoursComponent, 
+    CounterComponent, 
+    ProductsComponent, 
+    PeopleComponent, 
+    GalleryComponent, 
+    TeamComponent, 
+    NewsletterComponent, 
+    FooterComponent,
+    AboutUsComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

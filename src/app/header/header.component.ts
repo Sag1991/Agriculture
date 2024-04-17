@@ -11,11 +11,11 @@ import { TopHeaderComponent } from './top-header/top-header.component';
 })
 export class HeaderComponent {
   menuItems = [
-    { label: 'Home', link: '../' },
-    { label: 'Pages', link: '#' },
-    { label: 'Blog', link: 'grid-blog.html' },
-    { label: 'Gallery', link: 'grid-gallery.html' },
+    { label: 'Home', link: '#' },
+    { label: 'About', link: '#' },
+    { label: 'Blog', link: '#' },
+    { label: 'Gallery', link: '#' },
     { label: 'Elements', link: '#' },
-    { label: 'Shop', link: 'grid-shop.html' }
+    { label: 'Shop', link: '#' }
   ];
 }

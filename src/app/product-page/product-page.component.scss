@@ -1,0 +1,24 @@
+.product-section {
+    text-align: justify;
+    .text {
+        font-size: 12.5px; 
+        color: #000000;
+    }
+    .image-section {
+        display: flex !important; 
+        justify-content: space-between !important;
+        img:hover {
+            border: 1.5px solid blue !important;
+            box-shadow: 0.5px 0.5px 0.5px skyblue !important;
+        }
+        img {
+            width: 90px; 
+            height: 90px; 
+            margin: 0; 
+            border: 1px solid #ccc; 
+            border-radius: 8px; 
+            padding: 5px; 
+            cursor: pointer;
+        }
+    }
+}
