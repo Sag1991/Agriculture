@@ -14,10 +14,10 @@ export class CounterComponent {
 
 
     counters: any[] = [
-        { count: 245, title: 'New drinks and smoothies' },
+        { count: 245, title: 'New Product' },
         { count: 382, title: 'Special offers' },
         { count: 1267, title: 'Satisfied clients' },
-        { count: 474, title: 'Partners throughout the USA' }
+        { count: 474, title: 'Partners' }
     ];
 
     constructor(private elementRef: ElementRef) { }
